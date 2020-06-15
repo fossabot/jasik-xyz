@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="{{ "css/site.css" | absURL }}">
     {{ end }}
     <!--<meta name="description" content="{{ .Description }}">-->
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕔</text></svg>">
+    <script type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
     {{ range .AlternativeOutputFormats -}}
     {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s" />
@@ -42,6 +44,28 @@
             </ul>
         </nav>
     </header>
+    <div class="favicon-grid">
+        <button>🍔</button>
+        <button>😀</button>
+        <button>🙅🏻‍♀️</button>
+        <button>🐛</button>
+        <button>🎛</button>
+        <button>🤯</button>
+        <button>🎯</button>
+        <button>📕</button>
+        <button>5️⃣</button>
+        <button>🎨</button>
+        <button>🏆</button>
+        <button>👀</button>
+        <button>🔥</button>
+        <button>📦</button>
+        <button>🌴</button>
+        <button>😑</button>
+        <button>👻</button>
+        <button>👋</button>
+        <button>🐭</button>
+        <button>🥨</button>
+    </div>
     {{ partial "css-day" }}
     {{ block "main" . }}
     <main>
