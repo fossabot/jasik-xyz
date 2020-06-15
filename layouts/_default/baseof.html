@@ -22,7 +22,6 @@
     <!--<meta name="description" content="{{ .Description }}">-->
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕔</text></svg>">
-    <script type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
     {{ range .AlternativeOutputFormats -}}
     {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s" />
@@ -91,6 +90,7 @@
         <a rel="me" href="mailto:calebjasik@jasik.xyz">Email</a>
         <a rel="me alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml">RSS</a>
     </footer>
+    <script type="text/javascript" src="{{ "js/script.js" | absURL }}"></script>
 </body>
 
 </html>
